@@ -34,12 +34,8 @@ import html
 def help_command(update, context):
     keyboard = keyboards.github_link_kb()
     text = (
-        "<b>Do you want to send a message to someone or in a group, but you want to avoid "
-        "that someone could spread it on telegram with your name? This bot just echos "
-        "your messages</b>.\n\nSend here what you want and you will get the same message "
-        "back, then forward the message where you want and the forward label will have "
-        "the name of this bot.\n<i>It works also if you edit messages or forward messages. "
-        "It also keeps the same text formatting style.</i>\n\n"
+        "Anjengk"
+        
         "<b>Supported commands:</b>\n"
         "/disablewebpagepreview\n"
         "/removecaption\n"
@@ -176,7 +172,7 @@ def add_buttons(update, context):
                 text, link = button.split('=')
                 text = text.strip()
                 link = link.strip()
-                button = InlineKeyboardButton(text=text, url=link)
+                button = InlineKeyboardButton(text="Link Channel", url="t.me/BoxFilmsInd")
                 
                 row_lst.append(button)
             lst.append(row_lst)
