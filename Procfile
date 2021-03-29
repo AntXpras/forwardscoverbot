@@ -1,1 +1,1 @@
-worker: python config.yaml
+worker: python config.py
