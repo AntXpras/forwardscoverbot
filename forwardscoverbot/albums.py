@@ -25,14 +25,10 @@ ALBUM_DICT = {}
 
 def collect_album_items(update, context):
     """
-    if the media_group_id not a key in the dictionary yet:
-        - send sending action
-        - create a key in the dict with media_group_id
-        - add a list to the key and the first element is this update
-        - schedule a job in 1 sec
-    else:
-        - add update to the list of that media_group_id
-    """
+    jika media_group_id bukan kunci dalam kamus dictionary :
+        - kirim tindakan pengiriman
+        - Buatlah Kunci di media_group_id
+        """
     media_group_id = update.message.media_group_id
     if media_group_id not in ALBUM_DICT:
         context.bot.sendChatAction(
