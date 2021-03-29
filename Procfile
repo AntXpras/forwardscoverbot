@@ -1,1 +1,1 @@
-worker: python fowardscoverbot path/forwardscoverbot/config/config.yaml
+worker: cli fowardscoverbot path/forwardscoverbot/config/config.yaml
