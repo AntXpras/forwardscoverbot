@@ -22,8 +22,16 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
 def github_link_kb():
     button0 = InlineKeyboardButton(
-            text="Source code", 
-            url="https://github.com/91DarioDev/ForwardsCoverBot")
+            text="Join Channel", 
+            url="https://telegram.meoxFilmsInd")
+    buttons_list = [[button0]]
+    keyboard = InlineKeyboardMarkup(buttons_list)
+    return keyboard
+
+def github_link_kb():
+    button0 = InlineKeyboardButton(
+            text="Join ya ajg", 
+            url="https://telegram.me/BoxFilmsInd")
     buttons_list = [[button0]]
     keyboard = InlineKeyboardMarkup(buttons_list)
     return keyboard
